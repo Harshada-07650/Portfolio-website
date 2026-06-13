@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Harshada | Portfolio</title>
+<meta charset="UTF-8">
+<title>Harshada | Cloud Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
 
-        .container {
-            background: white;
-            width: 350px;
-            margin: 60px auto;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
+/* Navbar */
+.navbar {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
 
-        h1 {
-            margin-bottom: 5px;
-        }
+.navbar a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        p {
-            color: #555;
-        }
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
 
-        h2 {
-            margin-top: 20px;
-            color: #333;
-        }
+.hero h1 {
+    font-size: 35px;
+}
 
-        .skills {
-            background: #f2f2f2;
-            padding: 10px;
-            border-radius: 8px;
-        }
+.highlight {
+    color: #38bdf8;
+}
 
-        .contact {
-            margin-top: 15px;
-            font-size: 14px;
-        }
-    </style>
+.btn {
+    background: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Skills */
+.skills span {
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Hello, I'm Harshada 👋</h1>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Hello, I'm <span class="highlight">Harshada 👋</span></h1>
     <p>Aspiring Cloud Engineer ☁️</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</div>
 
-    <h2>About Me</h2>
-    <p>I am a fresher learning Cloud Computing, AWS, Linux and DevOps.</p>
-
-    <h2>Skills</h2>
-    <div class="skills">
-        AWS | Linux | Networking | GitHub
+<!-- About -->
+<div class="section" id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a fresher passionate about AWS, Linux, Networking and DevOps. I love building cloud projects.</p>
     </div>
+</div>
 
-    <h2>Contact</h2>
-    <p class="contact">Email: your@email.com</p>
+<!-- Skills -->
+<div class="section">
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>AWS</span>
+            <span>Linux</span>
+            <span>Networking</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+<div class="section" id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <p><b>Static Portfolio Website (AWS)</b></p>
+        <p>Hosted a portfolio website using AWS S3 with public access.</p>
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="section" id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: paraveharshada455@gmail.com</p>
+        <p>
+            <a href="https://github.com/Harshada-07650/Portfolio-website" target="_blank">GitHub</a>
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2026 Harshada | Cloud Portfolio</p>
 </div>
 
 </body>
