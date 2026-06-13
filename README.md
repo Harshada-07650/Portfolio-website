@@ -19,7 +19,7 @@ This project is a simple static portfolio website hosted on AWS S3.
 http://harshada-portfolio-site-2026.s3-website.ap-south-1.amazonaws.com
 
 ## 🔗 GitHub Repository
-https://github.com/your-username/portfolio-website
+https://github.com/Harshada-07650/Portfolio-website
 
 ## 👩‍💻 Author
 Harshada
