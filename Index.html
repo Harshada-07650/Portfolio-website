@@ -29,11 +29,13 @@ body {
 /* Hero */
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px;
 }
 
-.hero h1 {
-    font-size: 35px;
+.hero img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .highlight {
@@ -47,31 +49,56 @@ body {
     border-radius: 20px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
 }
 
 /* Sections */
 .section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 30px;
 }
 
+/* Cards */
 .card {
     background: #1e293b;
     padding: 20px;
     border-radius: 10px;
     margin-top: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 /* Skills */
 .skills span {
     background: #38bdf8;
     color: black;
-    padding: 5px 10px;
+    padding: 6px 12px;
     margin: 5px;
     border-radius: 20px;
     display: inline-block;
+}
+
+/* Projects grid */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project {
+    flex: 1 1 45%;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -79,38 +106,33 @@ body {
     text-align: center;
     padding: 20px;
     background: #020617;
-    margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
 <div class="navbar">
     <a href="#">Home</a>
-    <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </div>
 
-<!-- Hero Section -->
 <div class="hero">
+    <img src="https://via.placeholder.com/120" alt="profile">
     <h1>Hello, I'm <span class="highlight">Harshada 👋</span></h1>
     <p>Aspiring Cloud Engineer ☁️</p>
+
+    <a href="#" class="btn">Download Resume</a>
     <a href="#contact" class="btn">Contact Me</a>
 </div>
 
-<!-- About -->
-<div class="section" id="about">
+<div class="section">
     <div class="card">
         <h2>About Me</h2>
-        <p>I am a fresher passionate about AWS, Linux, Networking and DevOps. I love building cloud projects.</p>
+        <p>I am passionate about AWS, Linux, Networking and DevOps. I build real-world cloud projects.</p>
     </div>
-</div>
 
-<!-- Skills -->
-<div class="section">
     <div class="card">
         <h2>Skills</h2>
         <div class="skills">
@@ -120,29 +142,30 @@ body {
             <span>GitHub</span>
         </div>
     </div>
-</div>
 
-<!-- Projects -->
-<div class="section" id="projects">
-    <div class="card">
-        <h2>Projects</h2>
-        <p><b>Static Portfolio Website (AWS)</b></p>
-        <p>Hosted a portfolio website using AWS S3 with public access.</p>
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Hosted on AWS S3 with public access.</p>
+            <a href="#" class="btn">Live</a>
+        </div>
+
+        <div class="project">
+            <h3>Coming Soon</h3>
+            <p>More cloud projects will be added.</p>
+        </div>
+
     </div>
-</div>
 
-<!-- Contact -->
-<div class="section" id="contact">
-    <div class="card">
+    <div class="card" id="contact">
         <h2>Contact</h2>
         <p>Email: paraveharshada455@gmail.com</p>
-        <p>
-            <a href="https://github.com/Harshada-07650/Portfolio-website" target="_blank">GitHub</a>
-        </p>
+        <p><a href="https://github.com/Harshada-07650/Portfolio-website">GitHub</a></p>
     </div>
 </div>
 
-<!-- Footer -->
 <div class="footer">
     <p>© 2026 Harshada | Cloud Portfolio</p>
 </div>
