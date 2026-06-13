@@ -16,10 +16,10 @@ This project is a simple static portfolio website hosted on AWS S3.
 - index.html
 
 ## 🌍 Live Demo
-(Add your S3 website link here)
+http://harshada-portfolio-site-2026.s3-website.ap-south-1.amazonaws.com
 
 ## 🔗 GitHub Repository
-(Add your repo link here)
+https://github.com/your-username/portfolio-website
 
 ## 👩‍💻 Author
 Harshada
